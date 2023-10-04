@@ -75,18 +75,100 @@ body {
     overflow: hidden;
     height: 0;
     width: 100vw;
-    transition: height 2s ease;
+    transition: height 3s ease;
     transition-delay: 3s;
-    background-color: whitesmoke;
     z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    // background-image: linear-gradient(0deg, transparent 50%, #ffffff 50%);
+    // background-size: 51px 51px;
+    // background-color: #fae7fa;
+    background: white;
 }
 .main-block-opened{
     height: 300vh;
 
+}
+.first-title-main{
+  margin-top: 2vh;
+  height: 30vh;
+  width: 65vw;
+  background-image: url(./img/silverframenames.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.main-names{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 20vw;
+  margin-left: 2vw;
+  font-family: Rus-Cursive;
+  font-size: 30px;
+  .A-name{
+
+  }
+  .nd-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .K-name{
+
+  }
+}
+.helparrow{
+  top: 2vh;
+  position: fixed;
+  left: 40%;
+  opacity: 0;
+  width: 10vh;
+  height: 15vh;
+
+}
+.help-arrow-move{
+  animation-name: helparrowmove;
+  animation-duration: 4s;
+}
+@keyframes helparrowmove {
+  0%{opacity: 0;
+  }
+  10%{
+    opacity: 0.3;
+  }
+  30%{
+    opacity: 1;
+  }
+  40%{
+    transform: translateY(-20px);
+  }
+  70%{
+    transform: translateY(0);
+  }
+  100%{opacity: 0;}
+}
+.text-box{
+  margin-top: 5vh;
+  
+}
+.stix{
+  font-family: Kazakh;
+  font-size: 40px;
+}
+.call-to-wed-tex{
+  position: absolute;
+  top: 5vh;
+  text-align: center;
+  width: 95vw;
+  font-family: Kazakh;
+  font-size: 50px;
+  color: white;
 }
 .first-title{
     margin-top: 10px;
