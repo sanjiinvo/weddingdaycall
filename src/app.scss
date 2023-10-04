@@ -10,6 +10,8 @@ body {
     margin: 0;
     font-family: sans-serif;
   }
+  $bgcolor: white;
+  $textColor: black;
   .section {
     background-color: #fab1a0;
     height: 90vh;
@@ -84,7 +86,7 @@ body {
     // background-image: linear-gradient(0deg, transparent 50%, #ffffff 50%);
     // background-size: 51px 51px;
     // background-color: #fae7fa;
-    background: white;
+    background: $bgcolor;
 }
 .main-block-opened{
     height: 300vh;
@@ -101,7 +103,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  color: $textColor;
 }
 .main-names{
   display: flex;
@@ -155,21 +157,51 @@ body {
 }
 .text-box{
   margin-top: 5vh;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .stix{
   font-family: Kazakh;
-  font-size: 40px;
+  font-size: 50px;
+  color: $textColor;
+  text-align: center;
 }
 .call-to-wed-tex{
-  position: absolute;
-  top: 5vh;
-  text-align: center;
-  width: 95vw;
   font-family: Kazakh;
   font-size: 50px;
-  color: white;
+  color: $textColor;
+  text-align: center;
 }
+.date-adress-block{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./img/silverarch.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 5vh;
+}
+.date-box{
+  text-align: center;
+  width: 80vw;
+  font-family: Kazakh;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 8vh;
+  padding: 0;
+}
+.date-title{
+  margin: 0;
+  padding: 0;
+}
+.date-desc{
+  margin: 0;
+  padding: 0;
+}
+
 .first-title{
     margin-top: 10px;
     max-width: 100%;

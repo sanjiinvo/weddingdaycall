@@ -7,7 +7,7 @@ import enveloptop from './img/envelope-top.svg'
 import envolope from './img/envelope.svg'
 import ImagePreloader from './ImagePreloader';
 function App() {
-  const [clicked, setcliecked] = useState(false)
+  const [clicked, setcliecked] = useState(true);
   const [helparr, sethelparr] = useState(false)
 const HandleClick = () =>{
   setcliecked(true)
@@ -43,18 +43,33 @@ const showArrow = () =>{
       Бір баламыз, екеу болды мінекей, <br/>
       Тойға келіп батаңды бер ағайын!
       </span>
+      <p className='call-to-wed-tex'>
+  Құрметті қонақтар! 
+Сіздерді балаларымыз Амирхан мен Камиланың үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
+
+  </p>
       </div>
 
+      <div className='date-adress-block'>
+          <div className='date-box'>
+            <p className='date-title'>Той салтанаты:</p>
+            <p className='date-desc'>2023 жылдың 19 қараша күні сағат: 16:00.</p>
+          </div>
+          <div className='location-box'>
+          <p className='location-text'>
+          Мекен-жайымыз: <br/>
+          Астана қаласы, <br/>
+          Караменде би Шакаулы көшесі, 2<br/>
+          “Мирас” мейрамханасы
+          </p>
+          </div>
+      </div>
       </div>
       {/* <button className='button' onClick={HandleClick}>
         click
       </button> */}
 <div class="section">
-  <p className='call-to-wed-tex'>
-  Құрметті қонақтар! 
-Сіздерді балаларымыз Амирхан мен Камиланың үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
 
-  </p>
 
   <div class="envelope">
     
