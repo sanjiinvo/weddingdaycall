@@ -14,7 +14,9 @@ body {
 .App{
   height: 100%;
 }
-  $bgcolor: #fdfff1;
+  $bgcolor: #fefff8;
+  // $bgcolor: #fdfff1;
+
   $textColor: #3f7060;
   .section {
     background-color: #fab1a0;
@@ -193,12 +195,13 @@ body {
 }
 .stix{
   font-family: Kazakh;
-  font-size: 50px;
+  font-size: 47px;
   color: $textColor;
   text-align: center;
   letter-spacing: 2px;
 }
 .silv-arch-middle{
+  margin-top: 5vh;
   text-align: center;
   width: 100vw;
 }
@@ -210,6 +213,10 @@ body {
   letter-spacing: 2px;
 
 }
+.call-names{
+color: #f55b2e;
+padding: 0;
+margin: 0;}
 .date-adress-block{
   height: auto;
   width: 100vw;
@@ -255,7 +262,7 @@ body {
       text-align: center;
       width: 14%;
       font-size: 20px;
-      color: white;
+      color: #f55b2e;
       font-family: cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 }
@@ -277,18 +284,22 @@ body {
   }
 }
 .dayactive{
-  border: 1px solid red;
+  border: 1px solid #f55b2e;
   border-radius: 95% 30% 95% 30%;
   padding: 6px 2px 2px 2px;
+  color: #f55b2e;
 }
 .kallendar-title{
-  margin-top: 2vh;
+  
   text-transform: capitalize;
   font-family: Kazakh;
   font-size: 70px;
   text-align: center;
   letter-spacing: 3px;
   margin: 0;
+  margin-top: 5vh;
+  margin-bottom: -2vh;
+
   padding: 0;
 }
 .date-box{
@@ -318,6 +329,7 @@ body {
 
 }
 .date-title{
+  color: #f55b2e;
   margin: 0;
   padding: 0;
 }
@@ -325,6 +337,18 @@ body {
   margin: 0;
   padding: 0;
 }
+.gis-icon{
+  margin: 2vh 0;
+text-align: center;
+width: 35vw;
+}
+.toy-yeleri{
+  color: $textColor;
+  font-family: Kazakh;
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin: 0;
+  }
 .timer-box{
   width: 100%;
   // background-color: rgba($color: white, $alpha: 0.5);
@@ -332,7 +356,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .timer{
   margin: 0;
@@ -369,12 +393,14 @@ p{
   // color: white;
 }
 .date-named-word{
-  margin-top: -50%;
+  margin-top: -70%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
   color: #f55b2e;}
 }
 .drees-code{
   height: 40vh;
-  margin-top: 5vh;
+  margin-top: 4vh;
   width: 100%;
   height: 50vh;
   display: flex;
@@ -411,8 +437,9 @@ p{
   height: 30vw;
 }
 .style-text{
+
   color: grey;
-  font-size: 20px;
+  font-size: 18px;
 }
 .first-title{
     margin-top: 10px;

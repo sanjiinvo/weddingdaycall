@@ -11,8 +11,10 @@ import menstyle from './img/menstyle.png'
 import womenstyle from './img/womenstyle.png'
 import vertical from './img/verticalline.png'
 import ak from './img/AAAAAAAAAK.png'
+import mus from './audio/mus.mp3'
+import gis from './img/2gisl.png'
 function App() {
-  const [clicked, setcliecked] = useState(true);
+  const [clicked, setcliecked] = useState(false);
   const [helparr, sethelparr] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   function calculateTimeRemaining() {
@@ -43,7 +45,7 @@ function App() {
 
 const HandleClick = () =>{
   setcliecked(true)
-  const audio = new Audio()
+  const audio = new Audio(mus)
   audio.play()
 }
 useEffect(() => {
@@ -91,8 +93,8 @@ const showArrow = () =>{
       </span>
       <img className='silv-arch-middle' src={silvarch} alt='silver-arch'/>
       <p className='call-to-wed-tex'>
-  Құрметті қонақтар! 
-Сіздерді балаларымыз Амирхан мен Камиланың үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
+  Құрметті қонақтар!<br/>
+Сіздерді балаларымыз<p className='call-names'>Амирхан мен Камиланың</p>  үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
 
   </p>
       </div>
@@ -159,10 +161,10 @@ const showArrow = () =>{
           <div className='timer-box'>
       <div className="timer">
               <div className="timer__items">
-              <div className="timer__item timer__days">{timeRemaining.days}<br/><p className='date-named-word'>к</p></div>
-                <div className="timer__item timer__hours">{timeRemaining.hours}<br/><p className='date-named-word'>c</p></div>
-                <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/><p className='date-named-word'>м</p></div>
-                <div className="timer__item timer__seconds">{timeRemaining.seconds}<br/><p className='date-named-word'>с</p></div>
+              <div className="timer__item timer__days">{timeRemaining.days}<br/><p className='date-named-word'>күн</p></div>
+                <div className="timer__item timer__hours">{timeRemaining.hours}<br/><p className='date-named-word'>cағат</p></div>
+                <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/><p className='date-named-word'>минут</p></div>
+                <div className="timer__item timer__seconds">{timeRemaining.seconds}<br/><p className='date-named-word'>секунд</p></div>
                 {/* <div className="timer__item timer__days">{timeRemaining.days}<br/> күн</div>
                 <div className="timer__item timer__hours">{timeRemaining.hours}<br/>  сағат</div>
                 <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/>  минут</div>
@@ -181,6 +183,8 @@ const showArrow = () =>{
           Карамендеби Шакаулы көшесі, 2<br/>
           “Мирас” мейрамханасы
           </p>
+                <a href='https://2gis.kz/astana/geo/70000001045920548'><img className='gis-icon' src={gis} alt='gis'/></a>
+                <p className='toy-yeleri'>Той иелері:<br/> Даулет - Карлыгаш</p> 
           </div>
           </div>
       <div className='drees-code'>
@@ -192,7 +196,7 @@ const showArrow = () =>{
             </div>
             <div className='style-descr'>
             <img src={womenstyle} alt='women' className='women-style dress-style'/>
-            <p className='style-text'>Әйелдер қауымы:<br/>Кешкі койлек</p>
+            <p className='style-text'>Әйелдер қауымы:<br/>Кешкі көйлек</p>
 
             </div>
 
