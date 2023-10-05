@@ -9,8 +9,10 @@ import ImagePreloader from './ImagePreloader';
 import silvarch from './img/silverarch.png'
 import menstyle from './img/menstyle.png'
 import womenstyle from './img/womenstyle.png'
+import vertical from './img/verticalline.png'
+import ak from './img/AAAAAAAAAK.png'
 function App() {
-  const [clicked, setcliecked] = useState(false);
+  const [clicked, setcliecked] = useState(true);
   const [helparr, sethelparr] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   function calculateTimeRemaining() {
@@ -41,6 +43,8 @@ function App() {
 
 const HandleClick = () =>{
   setcliecked(true)
+  const audio = new Audio()
+  audio.play()
 }
 useEffect(() => {
   const timerInterval = setInterval(() => {
@@ -71,9 +75,10 @@ const showArrow = () =>{
       <div className='bg-white'>
       <div className='first-title-main'>
         <div className='main-names'>
-        <p className='A-name'>A</p>
-        <p className='nd-name'>&</p>
-        <p className='K-name'>K</p>
+          <img className='ak' src={ak} alt='AK' />
+        {/* <p className='A-name'>A</p>
+        <img className='vert-line' src={vertical} alt=''/>
+        <p className='K-name'>K</p> */}
         </div>
 
       </div>
@@ -154,10 +159,10 @@ const showArrow = () =>{
           <div className='timer-box'>
       <div className="timer">
               <div className="timer__items">
-              <div className="timer__item timer__days">{timeRemaining.days}<br/><p>к</p></div>
-                <div className="timer__item timer__hours">{timeRemaining.hours}<br/><p>c</p></div>
-                <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/><p>м</p></div>
-                <div className="timer__item timer__seconds">{timeRemaining.seconds}<br/><p>с</p></div>
+              <div className="timer__item timer__days">{timeRemaining.days}<br/><p className='date-named-word'>к</p></div>
+                <div className="timer__item timer__hours">{timeRemaining.hours}<br/><p className='date-named-word'>c</p></div>
+                <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/><p className='date-named-word'>м</p></div>
+                <div className="timer__item timer__seconds">{timeRemaining.seconds}<br/><p className='date-named-word'>с</p></div>
                 {/* <div className="timer__item timer__days">{timeRemaining.days}<br/> күн</div>
                 <div className="timer__item timer__hours">{timeRemaining.hours}<br/>  сағат</div>
                 <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/>  минут</div>
@@ -169,12 +174,14 @@ const showArrow = () =>{
 
       </div>
       <div className='location-box'>
-          <p className='location-text'>
-          Мекен-жайымыз: <br/>
+          <div className='location-text'>
+          <p style={{margin:0, color:'#f55b2e'}}>Мекен-жайымыз :</p>
+          <p style={{margin:0}}>
           Астана қаласы, <br/>
           Карамендеби Шакаулы көшесі, 2<br/>
           “Мирас” мейрамханасы
           </p>
+          </div>
           </div>
       <div className='drees-code'>
           <p className='dress-code-title'>Дресс Код:</p>

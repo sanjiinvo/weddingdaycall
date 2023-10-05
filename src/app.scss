@@ -14,10 +14,8 @@ body {
 .App{
   height: 100%;
 }
-  
-
-  $bgcolor: white;
-  $textColor: grey;
+  $bgcolor: #fdfff1;
+  $textColor: #3f7060;
   .section {
     background-color: #fab1a0;
     height: 90vh;
@@ -91,12 +89,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(./img/bgwhiterose.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    // background-image: linear-gradient(0deg, transparent 50%, #ffffff 50%);
-    // background-size: 51px 51px;
-    // background-color: #fae7fa;
+    // background-image: url(./img/bgwhiterose.jpg);
+    // background-size: cover;
+    // background-attachment: fixed;
+    background-color: #ffece8;
 }
 .main-block-opened{
     height: 100%;
@@ -110,39 +106,53 @@ body {
   overflow: auto;
   background-color: rgba($color: white, $alpha: 0.5);
 }
+.vert-line{
+  max-height: 150px;
+}
 .first-title-main{
-  margin-top: 2vh;
-  height: 30vh;
+  // margin-top: 2vh;
+  // height: 30vh;
   width: 100%;
-  background-image: url(./img/silverframenames.png);
+  // background-image: url(./img/silverframenames.png);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: $textColor;
+  align-items: baseline;
+  // color: $textColor;
+  color: #f55b2e;
+  font-weight: 600;
 }
 .main-names{
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  height: 10vh;
-  width: 20vw;
-  margin-left: 2vw;
+  // height: 10vh;
+  width: 50vw;
+  // margin-left: 2vw;
   font-family: Rus-Cursive;
   font-size: 30px;
   .A-name{
-
+    font-size: 40px;
+    // margin: 0;
+    // padding: 0;
   }
   .nd-name{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // margin-bottom: 15px;
+    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Kazakh;
+    font-size: 80px;
+    font-weight: 500;
   }
   .K-name{
-
   }
+  .ak{
+  width: 80vw;
+}
 }
 .helparrow{
   top: 2vh;
@@ -211,10 +221,12 @@ body {
   // background-repeat: no-repeat;
   // background-size: contain;
   // background-color: rgba($color: grey, $alpha: 1);
-  background: rgb(255,255,255);
-background:linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(126, 126, 126) 3%, rgb(120, 118, 118) 90%, rgba(255, 255, 255, 0) 100%);
+
+  /////////////////
+  // background: rgb(255,255,255);
+// background:linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(126, 126, 126) 3%, rgb(120, 118, 118) 90%, rgba(255, 255, 255, 0) 100%);
   
-  color: white;
+  color: $textColor;
   
 }
 .kallendar{
@@ -291,6 +303,7 @@ background:linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(126, 126, 126) 3
 
 }
 .location-box{
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -331,14 +344,14 @@ background:linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(126, 126, 126) 3
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  color: white;
+  color: #f55b2e;
   margin: 0;
   padding: 0;
 
 }
 .timer__item{
-  color: grey;
-  background: white;
+  color: #f55b2e;
+  // background: white;
   padding: 5px;
   width: 50px;
   height: 50px;
@@ -348,11 +361,16 @@ background:linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(126, 126, 126) 3
   font-size: 80px;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 p{
   margin: 0;
   padding: 0;
-  color: white;
+  // color: white;
 }
+.date-named-word{
+  margin-top: -50%;
+  color: #f55b2e;}
 }
 .drees-code{
   height: 40vh;
@@ -366,13 +384,15 @@ p{
 }
 .dress-code-title{
   text-align: center;
-  font-size: 90px;
+  font-size: 70px;
   color: $textColor;
   font-family: Kazakh;
   letter-spacing: 3px;
   margin: 0;
   padding: 0;
+  color: #f55b2e;
 }
+
 .style-descr{
   display: flex;
   flex-direction: column;
@@ -406,20 +426,7 @@ p{
     font-weight: 600;
     color: red;
 }
-.A-name{
-    align-self: flex-start;
-    margin: 0;
-padding: 0;
-}
-.nd-name{
-margin: 0;
-padding: 0;
-}
-.K-name{
-    align-self: flex-end;
-    margin: 0;
-padding: 0;
-}
+
 .first-title-img{
     width: 30vw;
 }
