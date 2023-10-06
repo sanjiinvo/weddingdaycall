@@ -13,12 +13,13 @@ import vertical from './img/verticalline.png'
 import ak from './img/AAAAAAAAAK.png'
 import mus from './audio/mus.mp3'
 import gis from './img/2gisl.png'
+import hands from './img/hands.jpg'
 function App() {
   const [clicked, setcliecked] = useState(false);
   const [helparr, sethelparr] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   function calculateTimeRemaining() {
-    const deadline = new Date('2023-11-19');
+    const deadline = new Date('2023-11-19 16:00');
     const currentTime = new Date();
     const timeDifference = deadline - currentTime;
     // console.log(currentTime);
@@ -62,7 +63,7 @@ useEffect(()=>{
  setTimeout(()=>{
   console.log(1);
   showArrow()
- },5000)
+ },3000)
 },[])
 
 const showArrow = () =>{
@@ -177,10 +178,10 @@ const showArrow = () =>{
       </div>
       <div className='location-box'>
           <div className='location-text'>
-          <p style={{margin:0, color:'#f55b2e'}}>Мекен-жайымыз :</p>
+          <p style={{margin:0, color:'#f55b2e'}}>Мекен-жайымыз:</p>
           <p style={{margin:0}}>
           Астана қаласы, <br/>
-          Карамендеби Шакаулы көшесі, 2<br/>
+          Караменде би Шакаулы көшесі, 2<br/>
           “Мирас” мейрамханасы
           </p>
                 <a href='https://2gis.kz/astana/geo/70000001045920548'><img className='gis-icon' src={gis} alt='gis'/></a>
@@ -215,7 +216,7 @@ const showArrow = () =>{
   <div class="envelope">
     
   <div onClick={HandleClick} class={!clicked ? "envelope__top envelope__top_close" : 'envelope__top'}>
-    <img src={enveloptop} alt="envtop" loading='eager'/>
+    <img className='env-top-loop' src={enveloptop} alt="envtop" loading='eager'/>
     <img className={helparr? 'helparrow help-arrow-move' :'helparrow'} src={helparrow} alt='helparrow'/>
     </div>   
     
@@ -225,12 +226,12 @@ const showArrow = () =>{
         <p className='nd-name'>&</p>
         <p className='K-name'> Камила</p>
       </div>
-      <img className='first-title-img' src={zhennev} alt='zhenev'/>
+      <img className='first-title-img' src={hands} alt='zhenev'/>
 
     </div>
     
     <div onClick={HandleClick} class="envelope__body">
-      <img src={envolope} alt="envlope" loading='eager'/>
+      <img className='conv-body' src={envolope} alt="envlope" loading='eager'/>
       {/* http://up-skills.ru/test/envelope.svg */}
     </div>
     

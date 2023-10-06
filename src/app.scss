@@ -14,12 +14,11 @@ body {
 .App{
   height: 100%;
 }
-  $bgcolor: #fefff8;
-  // $bgcolor: #fdfff1;
+  $bgcolor: #fdfff1;
 
   $textColor: #3f7060;
   .section {
-    background-color: #fab1a0;
+    background-color: white;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -27,13 +26,14 @@ body {
     padding-bottom: 10vh;
   }
   .envelope {
+    margin: auto;
     position: relative;
-    width: 96vw;
+    width: 100vw;
     height: 23.5vh;
   }
   .envelope__top {
     position: absolute;
-    top: 0;
+    top: -1.5vh;
     left: 0;
     width: 100%;
     transition: 0.3s;
@@ -94,7 +94,7 @@ body {
     // background-image: url(./img/bgwhiterose.jpg);
     // background-size: cover;
     // background-attachment: fixed;
-    background-color: #ffece8;
+    background-color: $bgcolor;
 }
 .main-block-opened{
     height: 100%;
@@ -305,14 +305,30 @@ margin: 0;}
 .date-box{
   text-align: center;
   width: 80vw;
+  // height: 24vh;  
   font-family: Kazakh;
   font-size: 50px;
   margin: 0;
   margin-top: 2vh;
   padding: 0;
+  padding: 0 10vw;
   letter-spacing: 2px;
+  // background-image: url(./img/bggreen.png);
+  // color: white;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
 }
+.conv-body{
+width: 100vw;
+}
+.env-top-loop{
+width: 100vw;}
 .location-box{
   margin-top: 5vh;
   display: flex;
@@ -331,6 +347,7 @@ margin: 0;}
 .date-title{
   color: #f55b2e;
   margin: 0;
+
   padding: 0;
 }
 .date-desc{
@@ -439,7 +456,7 @@ p{
 .style-text{
 
   color: grey;
-  font-size: 18px;
+  font-size: 18 px;
 }
 .first-title{
     margin-top: 10px;
@@ -448,14 +465,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-family: Rus-Cursive;
-    font-weight: 600;
-    color: red;
+    font-size: 60px;
+    font-family: Kazakh;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #f55b2e;
 }
 
 .first-title-img{
-    width: 30vw;
+    width: 40vw;
 }
 .click-more{
     font-family: Rus-Cursive;
