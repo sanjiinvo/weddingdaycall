@@ -1,11 +1,8 @@
 import { useEffect, useState } from 'react';
 import './app.scss';
-import zhennev from './img/zhennev.png';
 import helparrow from './img/helparrow.png'
-import { Arrow90degDown } from "react-bootstrap-icons";
 import enveloptop from './img/envelope-top.svg'
-import envolope from './img/envelope.svg'
-import ImagePreloader from './ImagePreloader';
+import envolope from './img/envelope-svg-cutted.svg'
 import silvarch from './img/silverarch.png'
 import menstyle from './img/menstyle.png'
 import womenstyle from './img/womenstyle.png'

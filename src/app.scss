@@ -33,7 +33,7 @@ body {
   }
   .envelope__top {
     position: absolute;
-    top: -1.5vh;
+    top: 6%;
     left: 0;
     width: 100%;
     transition: 0.3s;
@@ -41,7 +41,7 @@ body {
     transform-origin: bottom;
   }
   .envelope__body {
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
     left: 0;
