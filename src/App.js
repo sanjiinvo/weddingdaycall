@@ -76,9 +76,9 @@ const showArrow = () =>{
       <div className='first-title-main'>
         <div className='main-names'>
           <img className='ak' src={ak} alt='AK' />
-        {/* <p className='A-name'>A</p>
+        {/* <p lang='kk' className='A-name'>A</p>
         <img className='vert-line' src={vertical} alt=''/>
-        <p className='K-name'>K</p> */}
+        <p lang='kk' className='K-name'>K</p> */}
         </div>
 
       </div>
@@ -90,20 +90,20 @@ const showArrow = () =>{
       Тойға келіп батаңды бер ағайын!
       </span>
       <img className='silv-arch-middle' src={silvarch} alt='silver-arch'/>
-      <p className='call-to-wed-tex'>
+      <p lang='kk' className='call-to-wed-tex'>
   Құрметті қонақтар!<br/>
-Сіздерді балаларымыз<p className='call-names'>Амирхан мен Камиланың</p>  үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
+Сіздерді балаларымыз<p lang='kk' className='call-names'>Амирхан мен Камиланың</p>  үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
 
   </p>
       </div>
 
       <div className='date-adress-block'>
           <div className='date-box'>
-            <p className='date-title'>Той салтанаты:</p>
-            <p className='date-desc'>2023 жылдың 19 қараша күні сағат: 16:00.</p>
+            <p lang='kk' className='date-title'>Той салтанаты:</p>
+            <p lang='kk' className='date-desc'>2023 жылдың 19 қараша күні сағат: 16:00.</p>
           </div>
           <div className='kallendar'>
-            <p className='kallendar-title'> қараша</p>
+            <p lang='kk' className='kallendar-title'> қараша</p>
           <div className='kallendar-box'>
           <div className='dates'>
       <ul className='weekdays'> 
@@ -159,10 +159,10 @@ const showArrow = () =>{
           <div className='timer-box'>
       <div className="timer">
               <div className="timer__items">
-              <div className="timer__item timer__days">{timeRemaining.days}<br/><p className='date-named-word'>күн</p></div>
-                <div className="timer__item timer__hours">{timeRemaining.hours}<br/><p className='date-named-word'>cағат</p></div>
-                <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/><p className='date-named-word'>минут</p></div>
-                <div className="timer__item timer__seconds">{timeRemaining.seconds}<br/><p className='date-named-word'>секунд</p></div>
+              <div className="timer__item timer__days">{timeRemaining.days}<br/><p lang='kk' className='date-named-word'>күн</p></div>
+                <div className="timer__item timer__hours">{timeRemaining.hours}<br/><p lang='kk' className='date-named-word'>cағат</p></div>
+                <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/><p lang='kk' className='date-named-word'>минут</p></div>
+                <div className="timer__item timer__seconds">{timeRemaining.seconds}<br/><p lang='kk' className='date-named-word'>секунд</p></div>
                 {/* <div className="timer__item timer__days">{timeRemaining.days}<br/> күн</div>
                 <div className="timer__item timer__hours">{timeRemaining.hours}<br/>  сағат</div>
                 <div className="timer__item timer__minutes">{timeRemaining.minutes}<br/>  минут</div>
@@ -175,26 +175,26 @@ const showArrow = () =>{
       </div>
       <div className='location-box'>
           <div className='location-text'>
-          <p style={{margin:0, color:'#f55b2e'}}>Мекен-жайымыз:</p>
-          <p style={{margin:0}}>
+          <p lang='kk' style={{margin:0, color:'#f55b2e'}}>Мекен-жайымыз:</p>
+          <p lang='kk' style={{margin:0}}>
           Астана қаласы, <br/>
           Караменде би Шакаулы көшесі, 2<br/>
           “Мирас” мейрамханасы
           </p>
                 <a href='https://2gis.kz/astana/geo/70000001045920548'><img className='gis-icon' src={gis} alt='gis'/></a>
-                <p className='toy-yeleri'>Той иелері:<br/> Даулет - Карлыгаш</p> 
+                <p lang='kk' className='toy-yeleri'>Той иелері:<br/> Даулет - Карлыгаш</p> 
           </div>
           </div>
       <div className='drees-code'>
-          <p className='dress-code-title'>Дресс Код:</p>
+          <p lang='kk' className='dress-code-title'>Дресс Код:</p>
           <div className='dress-code-styles'>
             <div className='style-descr'>
             <img src={menstyle} alt='men' className='men-style dress-style'/>
-            <p className='style-text'>Ерлер қауымы:<br/>Классикалық <br/>костюм</p>
+            <p lang='kk' className='style-text'>Ерлер қауымы:<br/>Классикалық <br/>костюм</p>
             </div>
             <div className='style-descr'>
             <img src={womenstyle} alt='women' className='women-style dress-style'/>
-            <p className='style-text'>Әйелдер қауымы:<br/>Кешкі көйлек</p>
+            <p lang='kk' className='style-text'>Әйелдер қауымы:<br/>Кешкі көйлек</p>
 
             </div>
 
@@ -219,9 +219,9 @@ const showArrow = () =>{
     
     <div  class={!clicked ? "paper paper_close" : 'paper'}>
       <div className='first-title'>
-        <p className='A-name'>Aмирхан</p>
-        <p className='nd-name'>&</p>
-        <p className='K-name'> Камила</p>
+        <p lang='kk' className='A-name'>Aмирхан</p>
+        <p lang='kk' className='nd-name'>&</p>
+        <p lang='kk' className='K-name'> Камила</p>
       </div>
       <img className='first-title-img' src={hands} alt='zhenev'/>
 
